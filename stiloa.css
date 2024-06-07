@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  padding: 2rem 2rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #212529;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+thead, tbody, tfoot {
+  vertical-align: middle;
+}
+
+th {
+  text-align: left;
+  vertical-align: bottom;
+  padding: 0.75rem;
+  font-weight: 400;
+}
+
+td {
+  text-align: left;
+  color: #555;
+  font-weight: 100;
+  vertical-align: middle;
+  padding: 0.75rem;
+  border-top: 1px solid #DEE2E6;
+  width: 100%;
+}
+
+table #col_sel, table .selecao {
+  width: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #555;
+  border-color: #555;
+}
+
+button:hover {
+  color: #555;
+  background-color: #DEE2E6;
+  border-color: #DEE2E6;
+}
+
+button:disabled {
+  color: #DEE2E6;
+  background-color: transparent;
+  border-color: #DEE2E6;
+}
+
+input, select {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  color: #555;
+  outline: 0;
+}
+
+.container-fluid, .container {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+:root {
+    --bk-head-menu-bg-color: #81bbfa;
+}
+
+.header-container {
+}
+
+.background-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    height: 4rem;
+    background: var(--bk-head-menu-bg-color);
+}
+
+.logo {
+    background-image: url('./assets/image/logo-background-blue.svg');
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+    margin-right: auto;
+}
+
+.icone-user {
+    margin-right: 1%;
+}
+
+.my-count-menu {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.nav-bar {
+    display: none;
+    position: absolute;
+    right: 4px;
+    top:54px;
+    background-color: var(--bk-head-menu-bg-color);
+    border: 1px solid #1B87FA;
+    border-radius: 15px;
+}
+
+.my-count-menu:focus + .nav-bar,
+.my-count-menu:hover + .nav-bar {
+    display: block;
+}
+
+.nav-bar-item {
+    display: block;
+    padding: 20px 10px;
+}
